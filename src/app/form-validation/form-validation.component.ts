@@ -11,5 +11,10 @@ export class FormValidationComponent implements OnInit {
 
   ngOnInit() {
   }
+  onSubmit(val)
+  {
+
+    console.log(val)
+  }
 
 }

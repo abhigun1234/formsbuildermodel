@@ -7,7 +7,10 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { ModeldrivenComponent } from './modeldriven/modeldriven.component';
 import { FormbuilderComponent } from './formbuilder/formbuilder.component';
 import { TeplateComponent } from './teplate/teplate.component';
-import { ModeldrivencComponent } from './modeldrivenc/modeldrivenc.component'
+import { ModeldrivencComponent } from './modeldrivenc/modeldrivenc.component';
+import { UseregistrationComponent } from './useregistration/useregistration.component';
+import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
+import { TowwayComponent } from './towway/towway.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,10 @@ import { ModeldrivencComponent } from './modeldrivenc/modeldrivenc.component'
     ModeldrivenComponent,
     FormbuilderComponent,
     TeplateComponent,
-    ModeldrivencComponent
+    ModeldrivencComponent,
+    UseregistrationComponent,
+    TemplatedrivenComponent,
+    TowwayComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 <div class ="container">
-  <h2>User Data</h2>
-  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-    <div class ="form-group">
-      <label>Name</label>
-      <input #nameRef type="text"   required class="form-control" name="name" ngModel>
-      {{nameRef.className}}
-    </div>
-    <div class ="form-group">
-        <label>Email</label>
-        <input  type="text" required name="email"  class="form-control" ngModel>
-        
+    <h2>User Data</h2>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+      <div class ="form-group">
+        <label>Name</label>
+        <input #nameRef type="text"   required class="form-control" name="name" ngModel>
+        {{nameRef.className}}
       </div>
       <div class ="form-group">
-          <label>State</label>
-          <input type="text" required name="state"   class="form-control" ngModel>
+          <label>Email</label>
+          <input  type="text" required name="email"  class="form-control" ngModel>
+          
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </div>
+        <div class ="form-group">
+            <label>State</label>
+            <input type="text" required name="state"   class="form-control" ngModel>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
