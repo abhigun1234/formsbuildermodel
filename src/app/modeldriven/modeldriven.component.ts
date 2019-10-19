@@ -7,7 +7,7 @@ import {FormGroup,FormControl,Validators} from '@angular/forms'
 })
 export class ModeldrivenComponent implements OnInit {
   userForm=new FormGroup({name :new FormControl('abhishek',[Validators.required]),
-  email:new FormControl(),address:new FormGroup({street:new FormControl(),
+  email:new FormControl(''),address:new FormGroup({street:new FormControl(),
     city:new FormControl(),state:new FormControl(),postelcode:new FormControl()})})
   constructor() { }
 
@@ -17,6 +17,7 @@ export class ModeldrivenComponent implements OnInit {
   {
 
     console.log(this.userForm.value)
+    
   }
 
 }

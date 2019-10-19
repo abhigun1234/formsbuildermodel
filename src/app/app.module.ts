@@ -10,7 +10,9 @@ import { TeplateComponent } from './teplate/teplate.component';
 import { ModeldrivencComponent } from './modeldrivenc/modeldrivenc.component';
 import { UseregistrationComponent } from './useregistration/useregistration.component';
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
-import { TowwayComponent } from './towway/towway.component'
+import { TowwayComponent } from './towway/towway.component';
+import { LoginComponent } from './login/login.component';
+import { TemplateuserComponent } from './templateuser/templateuser.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,9 @@ import { TowwayComponent } from './towway/towway.component'
     ModeldrivencComponent,
     UseregistrationComponent,
     TemplatedrivenComponent,
-    TowwayComponent
+    TowwayComponent,
+    LoginComponent,
+    TemplateuserComponent
   ],
   imports: [
     BrowserModule,
