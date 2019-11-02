@@ -10,16 +10,18 @@ export class FormbuilderComponent implements OnInit {
   
   
   userForm:FormGroup;
-  constructor(private form_builder :FormBuilder) { }
+  constructor(private form_builder :FormBuilder) { 
+
+  }
   
   ngOnInit() {
     
-   this.userForm=this.form_builder.group({name:['abhishek',Validators.required],email:['',Validators.email]})
+  this.userForm=this.form_builder.group({name:['abhishek',Validators.required],email:[]})
   
   }
   onSubmit()
   {
-    console.log( this.userForm.value)
+    console.log(this.userForm.value)
   }
 
 }
