@@ -24,6 +24,31 @@
       <button  type="submit" class="btn btn-primary">Submit</button>
     </form>
     
+    --------------------------------
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+    
+      <div class ="form-group">
+        <label>Name</label>
+        <input type="text"    class="form-control" name="name" ngModel>
+      </div>
+      <div class ="form-group">
+        <label>Email</label>
+        <input type="text"    class="form-control" name="email" ngModel>
+      </div>
+      <div class ="form-group">
+        <label>street</label>
+        <input type="text"    class="form-control" name="street" ngModel>
+      </div>
+      <div class ="form-group">
+        <label>city</label>
+        <input type="text"    class="form-control" name="postelcode" ngModel>
+      </div>
+      <div class ="form-group">
+        <label>postelcode</label>
+        <input type="text"    class="form-control" name="city" ngModel>
+      </div>
+      <button  type="submit" class="btn btn-primary">Submit</button>
+    </form>
     
     </div>
     

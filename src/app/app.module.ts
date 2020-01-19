@@ -12,7 +12,8 @@ import { UseregistrationComponent } from './useregistration/useregistration.comp
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
 import { TowwayComponent } from './towway/towway.component';
 import { LoginComponent } from './login/login.component';
-import { TemplateuserComponent } from './templateuser/templateuser.component'
+import { TemplateuserComponent } from './templateuser/templateuser.component';
+import { HeaderComponent } from './header/header.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { TemplateuserComponent } from './templateuser/templateuser.component'
     TemplatedrivenComponent,
     TowwayComponent,
     LoginComponent,
-    TemplateuserComponent
+    TemplateuserComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
