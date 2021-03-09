@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./templatedriven.component.css']
 })
 export class TemplatedrivenComponent implements OnInit {
-
+ name1='abhishek'
   constructor() { }
 
   ngOnInit() {

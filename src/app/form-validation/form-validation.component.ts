@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styles: ['input.ng-invalid{border-left: 5px solid red;}input.ng-valid{border-left: 5px solid green;}']
 })
 export class FormValidationComponent implements OnInit {
-
+  name='abhishek'
   constructor() { }
 
   ngOnInit() {
