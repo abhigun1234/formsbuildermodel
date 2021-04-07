@@ -1,5 +1,16 @@
-<div class ="container">
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+<div class="container">
+  <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" >
+    <div class="form-group">
+      <label> Name</label>
+      <input class="form-control" name="name" ngModel>
+    </div>
+    <div class="form-group">
+      <label> Email</label>
+      <input class="form-control" name="email" ngModel>
+    </div>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+  <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
 
         <div class ="form-group">
           <label>Name</label>
@@ -27,9 +38,9 @@
         </div>
       <button  type="submit" class="btn btn-primary">Submit</button>
     </form>
-    
-    <!-- -------------------------------- -->
-    <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+     -->
+  <!-- -------------------------------- -->
+  <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
     
       <div class ="form-group">
         <label>Name</label>
@@ -54,5 +65,4 @@
       <button  type="submit" class="btn btn-primary">Submit</button>
     </form>
      -->
-    </div>
-    
+</div>
