@@ -11,8 +11,9 @@ export class TemplatedrivenComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit(val:any)
-  {
-    console.log(val)
+  
+  registration(val:any){
+
+    console.log("val",val)
   }
 }

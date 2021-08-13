@@ -13,7 +13,12 @@ import { TemplatedrivenComponent } from './templatedriven/templatedriven.compone
 import { TowwayComponent } from './towway/towway.component';
 import { LoginComponent } from './login/login.component';
 import { TemplateuserComponent } from './templateuser/templateuser.component';
-import { HeaderComponent } from './header/header.component'
+import { HeaderComponent } from './header/header.component';
+import { WelcomeComponent } from './welcome/welcome.component'
+import { AppRoutingModule } from './app.router.module';
+import { NewComponentComponent } from './new-component/new-component.component';
+import { CommentComponent } from './comment/comment.component';
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +32,17 @@ import { HeaderComponent } from './header/header.component'
     TowwayComponent,
     LoginComponent,
     TemplateuserComponent,
-    HeaderComponent
+    HeaderComponent,
+    WelcomeComponent,
+    NewComponentComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

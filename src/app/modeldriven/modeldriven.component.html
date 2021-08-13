@@ -3,7 +3,17 @@
     <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
       <div class ="form-group">
         <label>Name</label>
-        <input type="text"    class="form-control" formControlName="name" >
+        <input  #name type="text"    class="form-control" formControlName="name" >
+       {{name.className}}
+      </div>
+      <div class ="form-group">
+        <label>Email</label>
+        <input type="text"    class="form-control" formControlName="email" >
+       
+      </div>
+      <div class ="form-group">
+        <label>phone-no</label>
+        <input type="text"    class="form-control" formControlName="phoneno" >
        
       </div>
        <!-- <div class ="form-group">

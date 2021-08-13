@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators,FormBuilder } from '@angular/forms'
-import { Router } from '@angular/router'
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
+import {RestroService} from '..//restro.service'
 @Component({
-  selector: 'app-modeldriven',
-  templateUrl: './modeldriven.component.html',
-  styles: ['input.ng-invalid{border-left: 5px solid red;}input.ng-valid{border-left: 5px solid green;}']
+  selector: 'app-forms',
+  templateUrl: './forms.component.html',
+  styleUrls: ['./forms.component.css']
 })
-export class ModeldrivenComponent implements OnInit {
+export class FormsComponent implements OnInit {
+  constructor(private fb: FormBuilder,private service:RestroService){
+  
+  }
+  userForm=this.fb.group({name:['abhishek'],price:[''],description:[]})
+
   flag = true;
   nameObj: any;
   // userForm = new FormGroup({
@@ -16,10 +21,7 @@ export class ModeldrivenComponent implements OnInit {
   // })
   // userForm=new FormGroup({name:new FormControl('abhishek',[Validators.required,Validators.minLength(6)])})
   // userForm=new FormGroup({name:new FormControl(['',Validators.required]),email:new FormControl(['',Validators.email])})
-  constructor(private fb: FormBuilder){
-  
-  }
-  userForm=this.fb.group({name:['abhishek'],email:['',Validators.email]})
+
  
 
   ngOnInit() {
@@ -28,12 +30,15 @@ export class ModeldrivenComponent implements OnInit {
 
     console.log(this.userForm.value)
     this.nameObj = this.userForm.value
-    console.log(this.nameObj.name)
-    if (this.nameObj.name === 'abhishek') {
-      alert("hello")
-      // this.route.navigateByUrl('/welcome')
-    }
+    this.service.postResaturentMenu(this.userForm.value).subscribe(res=>{
+
+      console.log("res",res)
+    })
+    // console.log(this.nameObj.name)
+    // if (this.nameObj.name === 'abhishek') {
+    //   alert("hello")
+     
+    // }
 
   }
-
 }

@@ -1,4 +1,36 @@
 <div class="container">
+<form (ngSubmit)="registration(userForm.value)" #userForm="ngForm">
+  <div class="form-group">
+    <label> Name</label>
+    <input class="form-control" name="name" ngModel>
+   
+  </div>
+  <div class="form-group">
+    <label> Email</label>
+    <input class="form-control" name="email" ngModel>
+  
+  </div>
+  <div class="form-group">
+    <label> phone no</label>
+    <input class="form-control" name="phoneno" ngModel>
+  
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
   <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" >
     <div class="form-group">
       <label> Name</label>
@@ -9,7 +41,7 @@
       <input class="form-control" name="email" ngModel>
     </div>
     <button class="btn btn-primary">Submit</button>
-  </form>
+  </form> -->
   <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
 
         <div class ="form-group">

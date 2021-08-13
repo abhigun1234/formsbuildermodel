@@ -1,0 +1,13 @@
+<div class ="container">
+  <h2>User Data</h2>
+  <form  (ngSubmit)="onSubmit()">
+    <div class ="form-group">
+      <label>Name</label>
+      <input type="text" ngModel required name="firstName"  class="form-control"   #firstName=ngModel >
+      {{firstName.className}}
+      <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">Please Enter a atleast a char</div>
+    </div>
+
+        <button [disabled]="!firstName.valid"  type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>

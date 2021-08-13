@@ -12,4 +12,8 @@ export class AppComponent {
     alert(value)
     console.log(value)
   }
+  onClickData(){
+
+    alert("hello")
+  }
 }
